@@ -12,6 +12,56 @@
       name: The Falco Authors
   sources:
     - https://github.com/hainamtvvt/rules/blob/main/archive/application_rules.yaml
+- name: cloudtrail
+  type: plugin
+  registry: ghcr.io
+  repository: falcosecurity/plugins/plugin/cloudtrail
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Reads Cloudtrail JSON logs from files/S3 and injects as events
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/cloudtrail
+  keywords:
+    - audit
+    - user-activity
+    - api-usage
+    - aws
+    - cloudtrail
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/cloudtrail
+- name: cloudtrail-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: falcosecurity/plugins/ruleset/cloudtrail
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Reads Cloudtrail JSON logs from files/S3 and injects as events
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/cloudtrail
+  keywords:
+    - audit
+    - user-activity
+    - api-usage
+    - aws
+    - cloudtrail-rules
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/cloudtrail/rules
 - name: dummy
   type: plugin
   registry: ghcr.io
@@ -103,6 +153,107 @@
       name: The Falco Authors
   sources:
     - https://github.com/hainamtvvt/rules/blob/main/rules/falco-sandbox_rules.yaml
+- name: gcpaudit
+  type: plugin
+  registry: ghcr.io
+  repository: falcosecurity/plugins/plugin/gcpaudit
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Read GCP Audit Logs
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/gcpaudit
+  keywords:
+    - audit
+    - audit-log
+    - audit-events
+    - gcp
+    - gcpaudit
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/gcpaudit
+- name: gcpaudit-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: falcosecurity/plugins/ruleset/gcpaudit
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Read GCP Audit Logs
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/gcpaudit
+  keywords:
+    - audit
+    - audit-log
+    - audit-events
+    - gcp
+    - gcpaudit-rules
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/gcpaudit/rules
+- name: github
+  type: plugin
+  registry: ghcr.io
+  repository: falcosecurity/plugins/plugin/github
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Github Webhook Events
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/github
+  keywords:
+    - audit
+    - log-events
+    - webhook
+    - github-activity
+    - github
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/github
+- name: github-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: falcosecurity/plugins/ruleset/github
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Github Webhook Events
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/github
+  keywords:
+    - audit
+    - log-events
+    - webhook
+    - github-activity
+    - github
+    - github-rules
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/github/rules
 - name: json
   type: plugin
   registry: ghcr.io
@@ -179,6 +330,58 @@
       name: The Falco Authors
   sources:
     - https://github.com/hainamtvvt/plugins/tree/main/plugins/k8saudit-eks
+- name: k8saudit-gke
+  type: plugin
+  registry: ghcr.io
+  repository: falcosecurity/plugins/plugin/k8saudit-gke
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Read Kubernetes Audit Events from GKE Clusters
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/k8saudit-gke
+  keywords:
+    - audit
+    - audit-log
+    - audit-events
+    - kubernetes
+    - gke
+    - k8saudit-gke
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/k8saudit-gke
+- name: k8saudit-gke-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: falcosecurity/plugins/ruleset/k8saudit-gke
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Read Kubernetes Audit Events from GKE Clusters
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/k8saudit-gke
+  keywords:
+    - audit
+    - audit-log
+    - audit-events
+    - kubernetes
+    - gke
+    - k8saudit-gke-rules
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/k8saudit-gke/rules
 - name: k8saudit-rules
   type: rulesfile
   registry: ghcr.io
@@ -216,7 +419,7 @@
         certificate-identity-regexp: https://github.com/falcosecurity/plugins/
         certificate-github-workflow: ""
   description: Enriche Falco syscall flow with Kubernetes Metadata
-  home: https://github.com/falcosecurity/plugins/tree/main/plugins/k8smeta
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/k8smeta
   keywords:
     - kubernetes
     - syscall
@@ -227,4 +430,75 @@
     - email: cncf-falco-dev@lists.cncf.io
       name: The Falco Authors
   sources:
-    - https://github.com/falcosecurity/plugins/tree/main/plugins/k8smeta
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/k8smeta
+- name: kafka
+  type: plugin
+  registry: ghcr.io
+  repository: falcosecurity/plugins/plugin/kafka
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Read events from Kafka topics into Falco
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/kafka
+  keywords:
+    - events
+    - kafka
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+    - email: Hunter.Madison@ibm.com
+      name: Hunter Madison
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/kafka
+- name: okta
+  type: plugin
+  registry: ghcr.io
+  repository: falcosecurity/plugins/plugin/okta
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Okta Log Events
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/okta
+  keywords:
+    - audit
+    - log-events
+    - okta
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/okta
+- name: okta-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: falcosecurity/plugins/ruleset/okta
+  signature:
+    cosign:
+        certificate-oidc-issuer: https://token.actions.githubusercontent.com
+        certificate-oidc-issuer-regexp: ""
+        certificate-identity: ""
+        certificate-identity-regexp: https://github.com/falcosecurity/plugins/
+        certificate-github-workflow: ""
+  description: Okta Log Events
+  home: https://github.com/hainamtvvt/plugins/tree/main/plugins/okta
+  keywords:
+    - audit
+    - log-events
+    - okta
+    - okta-rules
+  license: Apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/plugins/tree/main/plugins/okta/rules
