@@ -61,6 +61,20 @@
       name: The Falco Authors
   sources:
     - https://github.com/hainamtvvt/rules/blob/main/rules/falco-incubating_rules.yaml
+- name: falco-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: falcosecurity/rules/falco-rules
+  description: Falco rules that are loaded by default
+  home: https://github.com/hainamtvvt/rules/blob/main/rules/falco_rules.yaml
+  keywords:
+    - falco-rules
+  license: apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/hainamtvvt/rules/blob/main/rules/falco_rules.yaml
 - name: falco-sandbox-rules
   type: rulesfile
   registry: ghcr.io
