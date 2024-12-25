@@ -44,13 +44,6 @@
   type: rulesfile
   registry: ghcr.io
   repository: falcosecurity/rules/falco-incubating-rules
-  signature:
-    cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-oidc-issuer-regexp: ""
-        certificate-identity: ""
-        certificate-identity-regexp: https://github.com/hainamtvvt/rules/
-        certificate-github-workflow: ""
   description: Falco incubating rules
   home: https://github.com/hainamtvvt/rules/blob/main/rules/falco-incubating_rules.yaml
   keywords:
@@ -65,13 +58,6 @@
   type: rulesfile
   registry: ghcr.io
   repository: falcosecurity/rules/falco-rules
-  signature:
-    cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-oidc-issuer-regexp: ""
-        certificate-identity: ""
-        certificate-identity-regexp: https://github.com/hainamtvvt/rules/
-        certificate-github-workflow: ""
   description: Falco rules that are loaded by default
   home: https://github.com/hainamtvvt/rules/blob/main/rules/falco_rules.yaml
   keywords:
@@ -86,13 +72,6 @@
   type: rulesfile
   registry: ghcr.io
   repository: falcosecurity/rules/falco-sandbox-rules
-  signature:
-    cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-oidc-issuer-regexp: ""
-        certificate-identity: ""
-        certificate-identity-regexp: https://github.com/hainamtvvt/rules/
-        certificate-github-workflow: ""
   description: Falco sandbox rules
   home: https://github.com/hainamtvvt/rules/blob/main/rules/falco-sandbox_rules.yaml
   keywords:
@@ -107,13 +86,6 @@
   type: plugin
   registry: ghcr.io
   repository: falcosecurity/plugins/plugin/json
-  signature:
-    cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-oidc-issuer-regexp: ""
-        certificate-identity: ""
-        certificate-identity-regexp: https://github.com/hainamtvvt/plugins/
-        certificate-github-workflow: ""
   description: Extract values from any JSON payload
   home: https://github.com/hainamtvvt/plugins/tree/main/plugins/json
   keywords:
@@ -131,13 +103,6 @@
   type: plugin
   registry: ghcr.io
   repository: falcosecurity/plugins/plugin/k8saudit
-  signature:
-    cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-oidc-issuer-regexp: ""
-        certificate-identity: ""
-        certificate-identity-regexp: https://github.com/hainamtvvt/plugins/
-        certificate-github-workflow: ""
   description: Read Kubernetes Audit Events and monitor Kubernetes Clusters
   home: https://github.com/hainamtvvt/plugins/tree/main/plugins/k8saudit
   keywords:
@@ -156,13 +121,6 @@
   type: rulesfile
   registry: ghcr.io
   repository: falcosecurity/plugins/ruleset/k8saudit
-  signature:
-    cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-oidc-issuer-regexp: ""
-        certificate-identity: ""
-        certificate-identity-regexp: https://github.com/hainamtvvt/plugins/
-        certificate-github-workflow: ""
   description: Read Kubernetes Audit Events and monitor Kubernetes Clusters
   home: https://github.com/hainamtvvt/plugins/tree/main/plugins/k8saudit
   keywords:
@@ -181,13 +139,6 @@
   type: plugin
   registry: ghcr.io
   repository: falcosecurity/plugins/plugin/k8smeta
-  signature:
-    cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-oidc-issuer-regexp: ""
-        certificate-identity: ""
-        certificate-identity-regexp: https://github.com/hainamtvvt/plugins/
-        certificate-github-workflow: ""
   description: Enriche Falco syscall flow with Kubernetes Metadata
   home: https://github.com/hainamtvvt/plugins/tree/main/plugins/k8smeta
   keywords:
