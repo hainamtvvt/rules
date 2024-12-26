@@ -1,4 +1,3 @@
-
 - name: application-rules
   type: rulesfile
   registry: ghcr.io
